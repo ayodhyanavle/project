@@ -34,6 +34,18 @@ header .top-header{
     color: blue;
 }
 
+.bxl-whatsapp-square{
+    color: #25D366;
+}
+
+.bxl-facebook-circle{
+    color: #1877F2;
+}
+
+.bxl-instagram-alt{
+    color: #E1306C;
+}
+
 .right-section{
     display: flex;
     align-items: center;
@@ -54,6 +66,7 @@ header .top-header{
 }
 
   .social-icons a{
+    
     display: flex;
     align-items: center;
  }
