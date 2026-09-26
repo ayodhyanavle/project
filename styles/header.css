@@ -31,9 +31,17 @@ header .top-header{
 }
 
 .bxl-twitter{
-    color: blue;
+    color:blue;
 }
-
+.bxl-instagram-alt{
+    color:#E1306C;
+}
+.bxl-facebook-circle{
+    color: #1877F2;
+}
+.bxl-whatsapp-square{
+    color: #25d366;
+}
 .right-section{
     display: flex;
     align-items: center;
