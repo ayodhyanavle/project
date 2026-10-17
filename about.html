@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Hub | About Us - The Story of Flavor & Quality</title>
+    <meta name="description" content="Discover the story behind BurgerHub. Smashed with passion, 100% fresh ingredients, master chef recipes, and 8+ years of craft burgers.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span>🍔</span> Burger<span>Hub</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="login.html" class="nav-login-btn" id="nav-auth-link">Sign In</a>
+            <button class="cart-btn" onclick="showCart()" aria-label="Open Shopping Cart">
+                🛒 <span id="cart-count">0</span>
+            </button>
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+        <span class="page-hero-badge">OUR CRAFT & HERITAGE</span>
+        <h1>The Passion Behind <span>BurgerHub</span></h1>
+        <p>We started with one mission: refuse frozen shortcuts and craft the juiciest, most unforgettable burgers on earth.</p>
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> <span>/</span> <span>About Us</span>
+        </div>
+    </section>
+
+    <!-- OUR STORY SECTION -->
+    <section class="about-story-section">
+        <div class="about-story-img-stack">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80"
+                alt="Burger Hub Kitchen Story" class="story-img-main">
+            <div class="story-img-badge">
+                <strong>8+ Years</strong>
+                <small>Of Smashing Greatness</small>
+            </div>
+        </div>
+
+        <div>
+            <div class="small-title">🔥 OUR ORIGIN STORY</div>
+            <h2 style="font-size: clamp(30px, 3.5vw, 42px); font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+                From a Street Food Truck to <span>Burger Royalty</span>
+            </h2>
+            <p style="color: #666; line-height: 1.8; margin-bottom: 18px; font-size: 15px;">
+                BurgerHub was born in 2018 in a modest food truck parked by the Mumbai seaside. We were tired of dry, factory-frozen patties stuffed with preservatives. We believed a burger should be a culinary masterpiece: searing heat, caramelized crust, decadent cheese, and pillows of buttery brioche.
+            </p>
+            <p style="color: #666; line-height: 1.8; margin-bottom: 25px; font-size: 15px;">
+                Today, our flat-top grills sear hundreds of fresh burgers every day, yet our commitment has never changed: every patty is freshly ground, every sauce is simmered from scratch, and every customer leaves smiling.
+            </p>
+            <div class="stats" style="margin-top: 10px;">
+                <div>
+                    <strong>100K+</strong>
+                    <small>Burgers Smashed</small>
+                </div>
+                <div>
+                    <strong>15+</strong>
+                    <small>City Outlets</small>
+                </div>
+                <div>
+                    <strong>4.9⭐</strong>
+                    <small>Customer Rating</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PILLARS SECTION -->
+    <section class="pillars-section">
+        <div class="section-heading">
+            <p>WHY WE ARE DIFFERENT</p>
+            <h2>The 4 Pillars of <span>Perfection</span></h2>
+        </div>
+
+        <div class="pillars-grid">
+            <div class="pillar-card">
+                <span class="pillar-icon">🥬</span>
+                <h3>100% Farm Produce</h3>
+                <p>Crisp iceberg lettuce, organic tomatoes, and sweet onions delivered daily from sustainable partner farms.</p>
+            </div>
+
+            <div class="pillar-card">
+                <span class="pillar-icon">🥩</span>
+                <h3>Fresh, Never Frozen</h3>
+                <p>Ground fresh each morning. Smashed hard on screaming 450°F cast iron to lock in natural savory juices.</p>
+            </div>
+
+            <div class="pillar-card">
+                <span class="pillar-icon">🍞</span>
+                <h3>Artisanal Brioche</h3>
+                <p>Golden, pillowy buns baked fresh at sunrise with real butter, lightly toasted with garlic butter upon order.</p>
+            </div>
+
+            <div class="pillar-card">
+                <span class="pillar-icon">🥫</span>
+                <h3>Secret Sauces</h3>
+                <p>Our signature relish, smoked chipotle mayo, and truffle herb aioli are handcrafted in-house with zero artificial colors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET THE CHEFS SECTION -->
+    <section class="chefs-section">
+        <div class="section-heading">
+            <p>MEET THE MASTERS</p>
+            <h2>The Culinary <span>Grill Masters</span></h2>
+        </div>
+
+        <div class="chefs-grid">
+            <!-- CHEF 1 -->
+            <div class="chef-card">
+                <div class="chef-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Executive Chef Marco">
+                </div>
+                <div class="chef-info">
+                    <h3>Chef Marco Silva</h3>
+                    <span class="chef-role">Executive Grill Master & Co-Founder</span>
+                    <p>With 16+ years of international gourmet experience, Marco engineered our iconic 4-patty smash technique.</p>
+                </div>
+            </div>
+
+            <!-- CHEF 2 -->
+            <div class="chef-card">
+                <div class="chef-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?auto=format&fit=crop&w=600&q=80" alt="Chef Priya Sharma">
+                </div>
+                <div class="chef-info">
+                    <h3>Chef Priya Sharma</h3>
+                    <span class="chef-role">Flavor Specialist & Sauce Alchemist</span>
+                    <p>Priya curates our secret spice blends, signature dips, and seasonal spicy Peri-Peri marinades.</p>
+                </div>
+            </div>
+
+            <!-- CHEF 3 -->
+            <div class="chef-card">
+                <div class="chef-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="Chef Dave Wilson">
+                </div>
+                <div class="chef-info">
+                    <h3>Chef Dave Wilson</h3>
+                    <span class="chef-role">Pastry & Brioche Director</span>
+                    <p>Dave perfected our ultra-soft brioche bun recipe that holds all the delicious juices without getting soggy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE MILESTONES -->
+    <section class="timeline-section">
+        <div class="section-heading">
+            <p>OUR JOURNEY</p>
+            <h2>Milestones Along the <span>Way</span></h2>
+        </div>
+
+        <div class="timeline-grid">
+            <div class="timeline-item">
+                <div class="timeline-year">2018</div>
+                <h4>The Tiny Food Truck</h4>
+                <p>Began serving 50 smash burgers a night by Carter Road with long lines down the street.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2020</div>
+                <h4>First Flagship Store</h4>
+                <p>Opened our first 80-seat neon dining lounge with retro music and open grill theater.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <h4>"Best Burger" Award</h4>
+                <p>Voted City Foodie Choice #1 Gourmet Burger Brand and expanded to 10 locations.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2026</div>
+                <h4>100,000+ Happy Foodies</h4>
+                <p>Delivering hot, fresh burgers in under 30 minutes with our state-of-the-art thermal fleet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div>
+            <p>FEELING INSPIRED?</p>
+            <h2>Taste the Passion <span>In Every Single Bite!</span></h2>
+        </div>
+        <a href="menu.html" class="primary-btn">Explore Our Menu →</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            🍔 Burger<span>Hub</span>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login / VIP Club</a>
+        </div>
+        <p>Fresh. Juicy. Delicious. Handcrafted with passion every single day.</p>
+        <div class="social">
+            Instagram &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; Twitter &nbsp; | &nbsp; WhatsApp
+        </div>
+        <hr>
+        <small>© 2026 Burger Hub. All Rights Reserved.</small>
+    </footer>
+
+    <!-- SLIDE-OVER CART DRAWER -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart Drawer">
+        <div class="cart-drawer-header">
+            <h3>🛒 Your Bag</h3>
+            <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">✕</button>
+        </div>
+
+        <div class="cart-items-container" id="cart-items-container">
+            <!-- Dynamically populated by script.js -->
+        </div>
+
+        <div class="cart-empty-state" id="cart-empty-state">
+            <span>🍔</span>
+            <h4>Your cart is empty</h4>
+            <p>Explore our menu and add your favorite burgers!</p>
+            <br>
+            <a href="menu.html" class="primary-btn" onclick="closeCart()">Browse Menu</a>
+        </div>
+
+        <div class="cart-drawer-footer">
+            <div class="coupon-box">
+                <input type="text" id="coupon-input" placeholder="Coupon Code (e.g. BURGER20)">
+                <button type="button" onclick="applyCoupon()">Apply</button>
+            </div>
+
+            <div class="bill-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹0</span>
+            </div>
+            <div class="bill-row">
+                <span>GST & Taxes (5%)</span>
+                <span id="cart-tax">₹0</span>
+            </div>
+            <div class="bill-row">
+                <span>Delivery Fee</span>
+                <span id="cart-delivery">₹0</span>
+            </div>
+            <div class="bill-row discount-row" id="cart-discount-row" style="display: none;">
+                <span>Coupon Discount</span>
+                <span id="cart-discount">-₹0</span>
+            </div>
+            <div class="bill-total-row">
+                <strong>Grand Total</strong>
+                <strong id="cart-total">₹0</strong>
+            </div>
+
+            <button class="checkout-btn" id="cart-checkout-btn" onclick="handleCheckout()">
+                Proceed to Checkout 🚀
+            </button>
+        </div>
+    </aside>
+
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="mobile-drawer-header">
+            <div class="logo">
+                <span>🍔</span> Burger<span>Hub</span>
+            </div>
+            <button class="cart-close-btn" onclick="closeMenu()">✕</button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="index.html" onclick="closeMenu()">Home <span>🏠</span></a>
+            <a href="menu.html" onclick="closeMenu()">Menu <span>🍔</span></a>
+            <a href="about.html" class="active" onclick="closeMenu()">About Us <span>📖</span></a>
+            <a href="contact.html" onclick="closeMenu()">Contact <span>📞</span></a>
+            <a href="login.html" onclick="closeMenu()">Sign In / VIP <span>👤</span></a>
+        </div>
+        <div style="margin-top: auto; padding-top: 20px;">
+            <button class="primary-btn" style="width: 100%; text-align: center;" onclick="closeMenu(); showCart();">
+                View Cart 🛒
+            </button>
+        </div>
+    </div>
+
+    <!-- ORDER CONFIRMATION MODAL -->
+    <div class="modal-backdrop" id="order-success-modal">
+        <div class="modal-box">
+            <button class="modal-close-corner" onclick="closeOrderModal()">✕</button>
+            <div class="modal-icon-badge">🎉</div>
+            <h3>Order Confirmed!</h3>
+            <p>Thank you for your order. Our grill masters have received your ticket and are preparing your juicy burgers now!</p>
+            <div class="modal-info-pill">
+                <span>Order ID: <strong id="order-num-display">#829140</strong></span>
+                <span>Total Paid: <strong id="order-amount-display">₹349</strong></span>
+            </div>
+            <p style="font-size: 13px; color: #888;">Estimated Delivery Time: <strong>25 - 35 mins</strong> 🛵</p>
+            <button class="primary-btn" style="width: 100%;" onclick="closeOrderModal()">Awesome, Got it!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
