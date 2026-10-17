@@ -22,13 +22,16 @@
         </a>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="index.html"><span>🏠 Home</span></a>
+            <a href="menu.html"><span>🍔 Menu</span></a>
+            <a href="about.html"><span>📖 About</span></a>
+            <a href="contact.html" class="active"><span>📞 Contact</span></a>
         </nav>
 
         <div class="nav-actions">
+            <button class="menu-layout-toggle-btn" id="menu-layout-toggle-btn" onclick="toggleNavLayout()" title="Switch navigation layout (Vertical one below another / Horizontal)">
+                ⇄ Horizontal
+            </button>
             <a href="login.html" class="nav-login-btn" id="nav-auth-link">Sign In</a>
             <button class="cart-btn" onclick="showCart()" aria-label="Open Shopping Cart">
                 🛒 <span id="cart-count">0</span>

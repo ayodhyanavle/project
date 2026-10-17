@@ -22,13 +22,16 @@
         </a>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html" class="active">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html"><span>🏠 Home</span></a>
+            <a href="menu.html" class="active"><span>🍔 Menu</span></a>
+            <a href="about.html"><span>📖 About</span></a>
+            <a href="contact.html"><span>📞 Contact</span></a>
         </nav>
 
         <div class="nav-actions">
+            <button class="menu-layout-toggle-btn" id="menu-layout-toggle-btn" onclick="toggleNavLayout()" title="Switch navigation layout (Vertical one below another / Horizontal)">
+                ⇄ Horizontal
+            </button>
             <a href="login.html" class="nav-login-btn" id="nav-auth-link">Sign In</a>
             <button class="cart-btn" onclick="showCart()" aria-label="Open Shopping Cart">
                 🛒 <span id="cart-count">0</span>
@@ -75,9 +78,22 @@
                 BURGER20 ✂️
             </div>
         </div>
+        
+        <!-- DISHES VIEW SWITCHER (ONE BELOW ANOTHER / GRID) -->
+        <div class="menu-view-switcher-bar">
+            <span class="menu-view-label">Dishes Layout: <strong>One Below Another</strong></span>
+            <div class="menu-view-buttons">
+                <button type="button" class="menu-view-btn active" id="view-btn-list" onclick="setFoodView('list')">
+                    ☰ One Below Another (List)
+                </button>
+                <button type="button" class="menu-view-btn" id="view-btn-grid" onclick="setFoodView('grid')">
+                    ⊞ 3-Column Grid
+                </button>
+            </div>
+        </div>
 
         <!-- FOOD GRID -->
-        <div class="food-grid" id="menu-grid">
+        <div class="food-grid one-below-another" id="menu-grid">
 
             <!-- ITEM 1 -->
             <div class="menu-item-card" data-category="burgers" data-name="Classic Crunch" data-desc="handcrafted smashed beef patty cheddar cheese lettuce signature relish">

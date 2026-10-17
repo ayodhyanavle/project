@@ -448,6 +448,11 @@ function closeOrderModal() {
 function toggleMenu() {
     const mobileMenu = document.getElementById('mobile-drawer');
     const mobileOverlay = document.getElementById('mobile-drawer-overlay');
+    const navbar = document.querySelector('.navbar');
+
+    if (navbar) {
+        navbar.classList.toggle('mobile-nav-visible');
+    }
     if (mobileMenu) {
         mobileMenu.classList.toggle('open');
     }
@@ -459,8 +464,72 @@ function toggleMenu() {
 function closeMenu() {
     const mobileMenu = document.getElementById('mobile-drawer');
     const mobileOverlay = document.getElementById('mobile-drawer-overlay');
+    const navbar = document.querySelector('.navbar');
+
+    if (navbar) navbar.classList.remove('mobile-nav-visible');
     if (mobileMenu) mobileMenu.classList.remove('open');
     if (mobileOverlay) mobileOverlay.classList.remove('open');
+}
+
+// Toggle Navbar Menu between Vertical (one below another) and Horizontal
+function toggleNavLayout() {
+    const navbar = document.querySelector('.navbar');
+    const btn = document.getElementById('menu-layout-toggle-btn');
+    if (!navbar) return;
+
+    navbar.classList.toggle('horizontal-menu');
+    const isHorizontal = navbar.classList.contains('horizontal-menu');
+    localStorage.setItem('burgerhub_nav_layout', isHorizontal ? 'horizontal' : 'vertical');
+
+    if (btn) {
+        btn.innerHTML = isHorizontal ? '↕ Vertical Menu' : '⇄ Horizontal Menu';
+    }
+    showToast(isHorizontal ? 'Navigation: Horizontal layout' : 'Navigation: One below another (Vertical)', '🧭');
+}
+
+// Set Food Menu layout (one-below-another list or grid)
+function setFoodView(layout) {
+    const containers = document.querySelectorAll('.food-grid');
+    const btnList = document.getElementById('view-btn-list');
+    const btnGrid = document.getElementById('view-btn-grid');
+
+    containers.forEach(container => {
+        if (layout === 'list') {
+            container.classList.add('one-below-another');
+        } else {
+            container.classList.remove('one-below-another');
+        }
+    });
+
+    if (btnList && btnGrid) {
+        if (layout === 'list') {
+            btnList.classList.add('active');
+            btnGrid.classList.remove('active');
+        } else {
+            btnGrid.classList.add('active');
+            btnList.classList.remove('active');
+        }
+    }
+
+    localStorage.setItem('burgerhub_food_layout', layout);
+    showToast(layout === 'list' ? 'Food Menu: One below another (List view)' : 'Food Menu: 3-Column Grid view', '🍔');
+}
+
+function initMenuLayouts() {
+    const savedNav = localStorage.getItem('burgerhub_nav_layout') || 'vertical';
+    const navbar = document.querySelector('.navbar');
+    const navBtn = document.getElementById('menu-layout-toggle-btn');
+
+    if (navbar && savedNav === 'horizontal') {
+        navbar.classList.add('horizontal-menu');
+        if (navBtn) navBtn.innerHTML = '↕ Vertical Menu';
+    } else if (navbar) {
+        navbar.classList.remove('horizontal-menu');
+        if (navBtn) navBtn.innerHTML = '⇄ Horizontal Menu';
+    }
+
+    const savedFood = localStorage.getItem('burgerhub_food_layout') || 'list';
+    setFoodView(savedFood);
 }
 
 
@@ -726,7 +795,7 @@ function applyMenuFilters() {
         const matchesQuery = query === '' || title.includes(query) || desc.includes(query);
 
         if (matchesCat && matchesQuery) {
-            card.style.display = 'flex';
+            card.style.display = '';
             visibleCount++;
         } else {
             card.style.display = 'none';
@@ -785,6 +854,7 @@ function handleContactSubmit(e) {
 document.addEventListener('DOMContentLoaded', () => {
     updateCartBadge();
     updateNavbarUser();
+    initMenuLayouts();
 
     // Close drawers on ESC key
     document.addEventListener('keydown', (e) => {
