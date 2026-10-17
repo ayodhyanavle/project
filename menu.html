@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger Hub | Delicious Menu - Burgers, Fries & Shakes</title>
-    <meta name="description" content="Explore BurgerHub's full menu of artisanal smash burgers, crispy loaded fries, handcrafted thick shakes, and hunger-busting combos.">
+    <meta name="description"
+        content="Explore BurgerHub's full menu of artisanal smash burgers, crispy loaded fries, handcrafted thick shakes, and hunger-busting combos.">
 
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +31,8 @@
         </nav>
 
         <div class="nav-actions">
-            <button class="menu-layout-toggle-btn" id="menu-layout-toggle-btn" onclick="toggleNavLayout()" title="Switch navigation layout (Vertical one below another / Horizontal)">
+            <button class="menu-layout-toggle-btn" id="menu-layout-toggle-btn" onclick="toggleNavLayout()"
+                title="Switch navigation layout (Vertical one below another / Horizontal)">
                 ⇄ Horizontal
             </button>
             <a href="login.html" class="nav-login-btn" id="nav-auth-link">Sign In</a>
@@ -56,7 +59,8 @@
         <!-- SEARCH BAR -->
         <div class="menu-search-wrapper">
             <span class="menu-search-icon">🔍</span>
-            <input type="text" id="menu-search-input" class="menu-search-input" placeholder="Search burgers, fries, shakes, combos...">
+            <input type="text" id="menu-search-input" class="menu-search-input"
+                placeholder="Search burgers, fries, shakes, combos...">
         </div>
 
         <!-- CATEGORY FILTERS -->
@@ -74,11 +78,12 @@
                 <h3>⚡ Special Offer: <span>Save 20% Today!</span></h3>
                 <p>Use promo code during checkout on all orders above ₹299. Fresh, fast & juicy!</p>
             </div>
-            <div class="coupon-pill" onclick="showToast('Code BURGER20 copied! Apply it in your cart.', '🎉')" title="Click to copy">
+            <div class="coupon-pill" onclick="showToast('Code BURGER20 copied! Apply it in your cart.', '🎉')"
+                title="Click to copy">
                 BURGER20 ✂️
             </div>
         </div>
-        
+
         <!-- DISHES VIEW SWITCHER (ONE BELOW ANOTHER / GRID) -->
         <div class="menu-view-switcher-bar">
             <span class="menu-view-label">Dishes Layout: <strong>One Below Another</strong></span>
@@ -96,11 +101,13 @@
         <div class="food-grid one-below-another" id="menu-grid">
 
             <!-- ITEM 1 -->
-            <div class="menu-item-card" data-category="burgers" data-name="Classic Crunch" data-desc="handcrafted smashed beef patty cheddar cheese lettuce signature relish">
+            <div class="menu-item-card" data-category="burgers" data-name="Classic Crunch"
+                data-desc="handcrafted smashed beef patty cheddar cheese lettuce signature relish">
                 <div class="food-image">
                     <span class="tag">BEST SELLER</span>
                     <span class="diet-indicator non-veg" title="Non-Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Classic Crunch Burger">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                        alt="Classic Crunch Burger">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -108,20 +115,25 @@
                         <span class="rating-count">4.9 (320)</span>
                     </div>
                     <h3>Classic Crunch</h3>
-                    <p>Juicy handcrafted beef patty with crisp lettuce, ripe tomatoes, cheddar cheese and signature relish.</p>
+                    <p>Juicy handcrafted beef patty with crisp lettuce, ripe tomatoes, cheddar cheese and signature
+                        relish.</p>
                     <div class="food-bottom">
                         <strong>₹149</strong>
-                        <button class="add-cart-btn" onclick="addCart('Classic Crunch', 149, 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80', 'burgers')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Classic Crunch', 149, 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80', 'burgers')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 2 -->
-            <div class="menu-item-card" data-category="burgers" data-name="Cheesy Blast" data-desc="double melted gouda cheddar crispy golden patty chipotle mayo">
+            <div class="menu-item-card" data-category="burgers" data-name="Cheesy Blast"
+                data-desc="double melted gouda cheddar crispy golden patty chipotle mayo">
                 <div class="food-image">
                     <span class="tag">POPULAR</span>
                     <span class="diet-indicator veg" title="Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=80" alt="Cheesy Blast Burger">
+                    <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=80"
+                        alt="Cheesy Blast Burger">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -129,20 +141,25 @@
                         <span class="rating-count">4.8 (284)</span>
                     </div>
                     <h3>Cheesy Blast</h3>
-                    <p>Double melted gouda and cheddar poured over a crispy golden veggie patty with smoky chipotle mayo.</p>
+                    <p>Double melted gouda and cheddar poured over a crispy golden veggie patty with smoky chipotle
+                        mayo.</p>
                     <div class="food-bottom">
                         <strong>₹179</strong>
-                        <button class="add-cart-btn" onclick="addCart('Cheesy Blast', 179, 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=80', 'burgers')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Cheesy Blast', 179, 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=80', 'burgers')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 3 -->
-            <div class="menu-item-card" data-category="burgers" data-name="Chicken Crunch" data-desc="crispy fried chicken breast korean spices garlic herb sauce">
+            <div class="menu-item-card" data-category="burgers" data-name="Chicken Crunch"
+                data-desc="crispy fried chicken breast korean spices garlic herb sauce">
                 <div class="food-image">
                     <span class="tag">CHEF SPECIAL</span>
                     <span class="diet-indicator non-veg" title="Non-Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=700&q=80" alt="Chicken Crunch Burger">
+                    <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=700&q=80"
+                        alt="Chicken Crunch Burger">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -150,20 +167,25 @@
                         <span class="rating-count">4.9 (410)</span>
                     </div>
                     <h3>Chicken Crunch</h3>
-                    <p>Buttermilk marinated crispy fried chicken breast tossed in hot Korean spices with creamy garlic herb sauce.</p>
+                    <p>Buttermilk marinated crispy fried chicken breast tossed in hot Korean spices with creamy garlic
+                        herb sauce.</p>
                     <div class="food-bottom">
                         <strong>₹199</strong>
-                        <button class="add-cart-btn" onclick="addCart('Chicken Crunch', 199, 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=700&q=80', 'burgers')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Chicken Crunch', 199, 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=700&q=80', 'burgers')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 4 -->
-            <div class="menu-item-card" data-category="burgers" data-name="Smoky BBQ Monster" data-desc="char-grilled double patty smoky bacon rashers caramelized onions bourbon bbq">
+            <div class="menu-item-card" data-category="burgers" data-name="Smoky BBQ Monster"
+                data-desc="char-grilled double patty smoky bacon rashers caramelized onions bourbon bbq">
                 <div class="food-image">
                     <span class="tag">MUST TRY</span>
                     <span class="diet-indicator non-veg" title="Non-Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=700&q=80" alt="Smoky BBQ Monster">
+                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=700&q=80"
+                        alt="Smoky BBQ Monster">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -171,20 +193,25 @@
                         <span class="rating-count">5.0 (190)</span>
                     </div>
                     <h3>Smoky BBQ Monster</h3>
-                    <p>Char-grilled double patty layered with smoky bacon rashers, caramelized onions and bourbon BBQ glaze.</p>
+                    <p>Char-grilled double patty layered with smoky bacon rashers, caramelized onions and bourbon BBQ
+                        glaze.</p>
                     <div class="food-bottom">
                         <strong>₹249</strong>
-                        <button class="add-cart-btn" onclick="addCart('Smoky BBQ Monster', 249, 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=700&q=80', 'burgers')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Smoky BBQ Monster', 249, 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=700&q=80', 'burgers')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 5 -->
-            <div class="menu-item-card" data-category="burgers" data-name="Truffle Swiss Smash" data-desc="wild portobello mushrooms swiss cheese black truffle garlic aioli brioche">
+            <div class="menu-item-card" data-category="burgers" data-name="Truffle Swiss Smash"
+                data-desc="wild portobello mushrooms swiss cheese black truffle garlic aioli brioche">
                 <div class="food-image">
                     <span class="tag">GOURMET</span>
                     <span class="diet-indicator veg" title="Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1583032015879-c5500e57263b?auto=format&fit=crop&w=700&q=80" alt="Truffle Swiss Smash">
+                    <img src="https://allcookscorner.com/wp-content/uploads/2025/03/Mushroom-Swiss-Smash-Burgers-with-Truffle-Sauce-768x768.png"
+                        alt="Truffle Swiss Smash">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -192,20 +219,25 @@
                         <span class="rating-count">4.7 (145)</span>
                     </div>
                     <h3>Truffle Swiss Smash</h3>
-                    <p>Sautéed wild portobello mushrooms, creamy Swiss cheese and black truffle garlic aioli on brioche.</p>
+                    <p>Sautéed wild portobello mushrooms, creamy Swiss cheese and black truffle garlic aioli on brioche.
+                    </p>
                     <div class="food-bottom">
                         <strong>₹229</strong>
-                        <button class="add-cart-btn" onclick="addCart('Truffle Swiss Smash', 229, 'https://images.unsplash.com/photo-1583032015879-c5500e57263b?auto=format&fit=crop&w=700&q=80', 'burgers')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Truffle Swiss Smash', 229, 'https://images.unsplash.com/photo-1583032015879-c5500e57263b?auto=format&fit=crop&w=700&q=80', 'burgers')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 6 -->
-            <div class="menu-item-card" data-category="burgers" data-name="Fiery Peri Jalapeño" data-desc="mexican jalapeno habanero chili cheese crispy fried onions spicy">
+            <div class="menu-item-card" data-category="burgers" data-name="Fiery Peri Jalapeño"
+                data-desc="mexican jalapeno habanero chili cheese crispy fried onions spicy">
                 <div class="food-image">
                     <span class="tag">SPICY 🔥</span>
                     <span class="diet-indicator veg" title="Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Fiery Peri Jalapeño">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"
+                        alt="Fiery Peri Jalapeño">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -213,20 +245,25 @@
                         <span class="rating-count">4.8 (215)</span>
                     </div>
                     <h3>Fiery Peri Jalapeño</h3>
-                    <p>Zesty Mexican jalapeño coins, habanero chili cheese spread, shredded lettuce and crispy fried onions.</p>
+                    <p>Zesty Mexican jalapeño coins, habanero chili cheese spread, shredded lettuce and crispy fried
+                        onions.</p>
                     <div class="food-bottom">
                         <strong>₹189</strong>
-                        <button class="add-cart-btn" onclick="addCart('Fiery Peri Jalapeño', 189, 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80', 'burgers')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Fiery Peri Jalapeño', 189, 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80', 'burgers')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 7 -->
-            <div class="menu-item-card" data-category="fries" data-name="Golden Peri Fries" data-desc="crispy skin on french fries peri-peri herb seasoning sides">
+            <div class="menu-item-card" data-category="fries" data-name="Golden Peri Fries"
+                data-desc="crispy skin on french fries peri-peri herb seasoning sides">
                 <div class="food-image">
                     <span class="tag">FAVORITE</span>
                     <span class="diet-indicator veg" title="Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=700&q=80" alt="Golden Peri Fries">
+                    <img src="https://spoonrecipes.com/wp-content/uploads/2026/03/amazing-30-minute-baked-cottage-cheese-fries-2026-03-30-212843.webp"
+                        alt="Golden Peri Fries">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -237,17 +274,21 @@
                     <p>Skin-on extra crispy potatoes dusted with signature fiery African peri-peri herb seasoning.</p>
                     <div class="food-bottom">
                         <strong>₹99</strong>
-                        <button class="add-cart-btn" onclick="addCart('Golden Peri Fries', 99, 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=700&q=80', 'fries')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Golden Peri Fries', 99, 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=700&q=80', 'fries')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 8 -->
-            <div class="menu-item-card" data-category="fries" data-name="Loaded Cheesy Bacon Fries" data-desc="crispy fries four-cheese sauce melted bacon bits scallions">
+            <div class="menu-item-card" data-category="fries" data-name="Loaded Cheesy Bacon Fries"
+                data-desc="crispy fries four-cheese sauce melted bacon bits scallions">
                 <div class="food-image">
                     <span class="tag">TOP PICK</span>
                     <span class="diet-indicator non-veg" title="Non-Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=700&q=80" alt="Loaded Cheesy Bacon Fries">
+                    <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=700&q=80"
+                        alt="Loaded Cheesy Bacon Fries">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -255,20 +296,25 @@
                         <span class="rating-count">4.9 (310)</span>
                     </div>
                     <h3>Loaded Cheesy Bacon Fries</h3>
-                    <p>A hot heap of crispy fries smothered in melted four-cheese sauce, crispy bacon bits and chopped scallions.</p>
+                    <p>A hot heap of crispy fries smothered in melted four-cheese sauce, crispy bacon bits and chopped
+                        scallions.</p>
                     <div class="food-bottom">
                         <strong>₹159</strong>
-                        <button class="add-cart-btn" onclick="addCart('Loaded Cheesy Bacon Fries', 159, 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=700&q=80', 'fries')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Loaded Cheesy Bacon Fries', 159, 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=700&q=80', 'fries')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 9 -->
-            <div class="menu-item-card" data-category="fries" data-name="Beer-Battered Onion Rings" data-desc="sweet onion rings crispy tempura batter comeback dipping sauce">
+            <div class="menu-item-card" data-category="fries" data-name="Beer-Battered Onion Rings"
+                data-desc="sweet onion rings crispy tempura batter comeback dipping sauce">
                 <div class="food-image">
                     <span class="tag">CRISPY</span>
                     <span class="diet-indicator veg" title="Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1639024471287-032f6645558d?auto=format&fit=crop&w=700&q=80" alt="Beer-Battered Onion Rings">
+                    <img src="https://i.pinimg.com/originals/7e/84/06/7e8406a577d1e0e7a9e307b6023ad13e.jpg"
+                        alt="Beer-Battered Onion Rings">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -276,20 +322,25 @@
                         <span class="rating-count">4.6 (180)</span>
                     </div>
                     <h3>Beer-Battered Onion Rings</h3>
-                    <p>Sweet Vidalia onion rings enveloped in crisp golden tempura batter, served with tangy comeback dip.</p>
+                    <p>Sweet Vidalia onion rings enveloped in crisp golden tempura batter, served with tangy comeback
+                        dip.</p>
                     <div class="food-bottom">
                         <strong>₹119</strong>
-                        <button class="add-cart-btn" onclick="addCart('Beer-Battered Onion Rings', 119, 'https://images.unsplash.com/photo-1639024471287-032f6645558d?auto=format&fit=crop&w=700&q=80', 'fries')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Beer-Battered Onion Rings', 119, 'https://images.unsplash.com/photo-1639024471287-032f6645558d?auto=format&fit=crop&w=700&q=80', 'fries')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 10 -->
-            <div class="menu-item-card" data-category="drinks" data-name="Thick Belgian Shake" data-desc="dark belgian chocolate vanilla bean ice cream whipped cream milkshake">
+            <div class="menu-item-card" data-category="drinks" data-name="Thick Belgian Shake"
+                data-desc="dark belgian chocolate vanilla bean ice cream whipped cream milkshake">
                 <div class="food-image">
                     <span class="tag">SWEET SPOT</span>
                     <span class="diet-indicator veg" title="Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80" alt="Thick Belgian Shake">
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80"
+                        alt="Thick Belgian Shake">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -297,20 +348,25 @@
                         <span class="rating-count">4.9 (440)</span>
                     </div>
                     <h3>Thick Belgian Shake</h3>
-                    <p>Decadent melted 70% dark Belgian chocolate spun with velvety vanilla bean ice cream and whipped cream.</p>
+                    <p>Decadent melted 70% dark Belgian chocolate spun with velvety vanilla bean ice cream and whipped
+                        cream.</p>
                     <div class="food-bottom">
                         <strong>₹139</strong>
-                        <button class="add-cart-btn" onclick="addCart('Thick Belgian Shake', 139, 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80', 'drinks')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Thick Belgian Shake', 139, 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80', 'drinks')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 11 -->
-            <div class="menu-item-card" data-category="drinks" data-name="Strawberry Bliss Shake" data-desc="alpine strawberries sweet cream milkshake drizzle">
+            <div class="menu-item-card" data-category="drinks" data-name="Strawberry Bliss Shake"
+                data-desc="alpine strawberries sweet cream milkshake drizzle">
                 <div class="food-image">
                     <span class="tag">FRESH</span>
                     <span class="diet-indicator veg" title="Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=700&q=80" alt="Strawberry Bliss Shake">
+                    <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=700&q=80"
+                        alt="Strawberry Bliss Shake">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -318,20 +374,25 @@
                         <span class="rating-count">4.7 (290)</span>
                     </div>
                     <h3>Strawberry Bliss Shake</h3>
-                    <p>Hand-picked alpine strawberries blended with rich sweet cream, topped with fresh strawberry drizzle.</p>
+                    <p>Hand-picked alpine strawberries blended with rich sweet cream, topped with fresh strawberry
+                        drizzle.</p>
                     <div class="food-bottom">
                         <strong>₹129</strong>
-                        <button class="add-cart-btn" onclick="addCart('Strawberry Bliss Shake', 129, 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=700&q=80', 'drinks')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Strawberry Bliss Shake', 129, 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=700&q=80', 'drinks')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 12 -->
-            <div class="menu-item-card" data-category="drinks" data-name="Iced Citrus Mint Cooler" data-desc="meyer lemons garden mint sparkling soda chilled cooler drink">
+            <div class="menu-item-card" data-category="drinks" data-name="Iced Citrus Mint Cooler"
+                data-desc="meyer lemons garden mint sparkling soda chilled cooler drink">
                 <div class="food-image">
                     <span class="tag">REFRESHING</span>
                     <span class="diet-indicator veg" title="Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80" alt="Iced Citrus Mint Cooler">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80"
+                        alt="Iced Citrus Mint Cooler">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -339,20 +400,25 @@
                         <span class="rating-count">4.8 (230)</span>
                     </div>
                     <h3>Iced Citrus Mint Cooler</h3>
-                    <p>Freshly squeezed Meyer lemons, crushed garden mint leaves, sparkling soda and hints of ginger.</p>
+                    <p>Freshly squeezed Meyer lemons, crushed garden mint leaves, sparkling soda and hints of ginger.
+                    </p>
                     <div class="food-bottom">
                         <strong>₹89</strong>
-                        <button class="add-cart-btn" onclick="addCart('Iced Citrus Mint Cooler', 89, 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80', 'drinks')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Iced Citrus Mint Cooler', 89, 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80', 'drinks')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 13 -->
-            <div class="menu-item-card" data-category="combos" data-name="Ultimate Feast Combo" data-desc="signature burger large peri peri fries handcrafted shake warm cookie combo meal">
+            <div class="menu-item-card" data-category="combos" data-name="Ultimate Feast Combo"
+                data-desc="signature burger large peri peri fries handcrafted shake warm cookie combo meal">
                 <div class="food-image">
                     <span class="tag">BEST VALUE</span>
                     <span class="diet-indicator non-veg" title="Non-Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=700&q=80" alt="Ultimate Feast Combo">
+                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=700&q=80"
+                        alt="Ultimate Feast Combo">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -363,17 +429,21 @@
                     <p>Any Signature Burger + Large Peri-Peri Fries + Handcrafted Shake + Warm Cookie. Save ₹120!</p>
                     <div class="food-bottom">
                         <strong>₹349</strong>
-                        <button class="add-cart-btn" onclick="addCart('Ultimate Feast Combo', 349, 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=700&q=80', 'combos')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Ultimate Feast Combo', 349, 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=700&q=80', 'combos')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- ITEM 14 -->
-            <div class="menu-item-card" data-category="combos" data-name="Duo Squad Party Box" data-desc="two burgers cheesy bacon fries two drinks brownies combo party">
+            <div class="menu-item-card" data-category="combos" data-name="Duo Squad Party Box"
+                data-desc="two burgers cheesy bacon fries two drinks brownies combo party">
                 <div class="food-image">
                     <span class="tag">FOR 2 PEOPLE</span>
                     <span class="diet-indicator non-veg" title="Non-Vegetarian"></span>
-                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=700&q=80" alt="Duo Squad Party Box">
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=700&q=80"
+                        alt="Duo Squad Party Box">
                 </div>
                 <div class="food-info">
                     <div class="food-meta">
@@ -381,10 +451,13 @@
                         <span class="rating-count">4.9 (430)</span>
                     </div>
                     <h3>Duo Squad Party Box</h3>
-                    <p>2 Classic Crunch or Chicken Crunch Burgers + 1 Cheesy Bacon Fries + 2 Chilled Drinks + 2 Brownies.</p>
+                    <p>2 Classic Crunch or Chicken Crunch Burgers + 1 Cheesy Bacon Fries + 2 Chilled Drinks + 2
+                        Brownies.</p>
                     <div class="food-bottom">
                         <strong>₹499</strong>
-                        <button class="add-cart-btn" onclick="addCart('Duo Squad Party Box', 499, 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=700&q=80', 'combos')" title="Add to Cart">+</button>
+                        <button class="add-cart-btn"
+                            onclick="addCart('Duo Squad Party Box', 499, 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=700&q=80', 'combos')"
+                            title="Add to Cart">+</button>
                     </div>
                 </div>
             </div>
@@ -499,7 +572,8 @@
             <button class="modal-close-corner" onclick="closeOrderModal()">✕</button>
             <div class="modal-icon-badge">🎉</div>
             <h3>Order Confirmed!</h3>
-            <p>Thank you for your order. Our grill masters have received your ticket and are preparing your juicy burgers now!</p>
+            <p>Thank you for your order. Our grill masters have received your ticket and are preparing your juicy
+                burgers now!</p>
             <div class="modal-info-pill">
                 <span>Order ID: <strong id="order-num-display">#829140</strong></span>
                 <span>Total Paid: <strong id="order-amount-display">₹349</strong></span>
