@@ -1,11 +1,414 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Burger Hub | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>HII</h1>
+
+    
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>🍔</span> Burger<span>Hub</span>
+        </div>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact detail">Contact detail</a>
+        </nav>
+
+        <button class="cart-btn" onclick="showCart()">
+            🛒 <span id="cart-count">0</span>
+        </button>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-content">
+
+            <div class="small-title">
+                🔥 #1 BURGER DESTINATION
+            </div>
+
+            <h1>
+                Feel the
+                <span>BURGER</span>
+                <br>
+                Feel the
+                <span>HAPPINESS!</span>
+            </h1>
+
+            <p>
+                Fresh ingredients, juicy patties and unforgettable
+                flavors. Your perfect burger is just one click away.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="primary-btn">
+                    Order Now 🍔
+                </a>
+
+                <a href="#menu" class="secondary-btn">
+                    Explore Menu →
+                </a>
+
+            </div>
+
+            <div class="rating">
+
+                <div class="avatars">
+                    👨🏻 👩🏻 👨🏽 👩🏼
+                </div>
+
+                <div>
+                    <strong>4.9 ⭐</strong>
+                    <small>10K+ Happy Customers</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT BURGER -->
+        <div class="hero-food">
+
+            <div class="circle"></div>
+
+            <div class="offer-badge">
+                <strong>20%</strong>
+                OFF
+            </div>
+
+            <img class="main-burger"
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+                alt="Delicious Burger">
+
+            <div class="floating-card">
+                <span>🔥</span>
+                <div>
+                    <strong>Hot & Fresh</strong>
+                    <small>Made for you</small>
+                </div>
+            </div>
+
+            <div class="floating-fries">
+                🍟
+            </div>
+
+            <div class="floating-drink">
+                🥤
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <div class="feature">
+            <div class="feature-icon">🥬</div>
+            <div>
+                <h3>Fresh Ingredients</h3>
+                <p>Quality ingredients</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🔥</div>
+            <div>
+                <h3>Hot & Fresh</h3>
+                <p>Prepared fresh daily</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🚀</div>
+            <div>
+                <h3>Fast Delivery</h3>
+                <p>At your doorstep</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">⭐</div>
+            <div>
+                <h3>Best Taste</h3>
+                <p>Loved by thousands</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+
+        <div class="section-heading">
+            <p>OUR SPECIAL MENU</p>
+
+            <h2>
+                Choose Your
+                <span>Favorite</span>
+            </h2>
+
+            <div class="categories">
+                <button class="category active">🍔 Burgers</button>
+                <button class="category active">🍟 Fries</button>
+                <button class="category">🥤 Drinks</button>
+                <button class="category">🍕 Combos</button>
+            </div>
+        </div>
+
+
+        <div class="food-grid">
+
+            <!-- CARD 1 -->
+            <div class="food-card">
+
+                <div class="food-image">
+                    <span class="tag">BEST SELLER</span>
+
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=80"
+                        alt="Classic Burger">
+                </div>
+
+                <div class="food-info">
+
+                    <div class="stars">★★★★★</div>
+
+                    <h3>Classic Crunch</h3>
+
+                    <p>Juicy patty with fresh vegetables & cheese.</p>
+
+                    <div class="food-bottom">
+                        <strong>₹149</strong>
+
+                        <button onclick="addCart('Classic Crunch')">
+                            +
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="food-card">
+
+                <div class="food-image">
+                    <span class="tag">POPULAR</span>
+
+                    <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=80"
+                        alt="Cheese Burger">
+                </div>
+
+                <div class="food-info">
+
+                    <div class="stars">★★★★★</div>
+
+                    <h3>Cheesy Blast</h3>
+
+                    <p>Loaded with melted cheese and crispy patty.</p>
+
+                    <div class="food-bottom">
+                        <strong>₹179</strong>
+
+                        <button onclick="addCart('Cheesy Blast')">
+                            +
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="food-card">
+
+                <div class="food-image">
+
+                    <img src="https://images.ctfassets.net/uexfe9h31g3m/3RAZx5duDCPXQvDCTuLQrD/b8b010fc34a3116feba74731fc56579d/UK_Quorn-Korean-Chiqin-Sandwich-3_copy.jpg?w=768&h=576&fm=webp&fit=thumb&q=90"
+                        alt="Chicken Burger">
+                </div>
+
+                <div class="food-info">
+
+                    <div class="stars">★★★★★</div>
+
+                    <h3>Chicken Crunch</h3>
+
+                    <p>Crispy chicken with creamy signature sauce.</p>
+
+                    <div class="food-bottom">
+                        <strong>₹199</strong>
+
+                        <button onclick="addCart('Chicken Crunch')">
+                            +
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+      <!-- Contact Form -->
+            <form class="contact-form"
+                  onsubmit="event.preventDefault(); alert('Thank you for contacting BurgerHub!'); this.reset();">
+
+                <h2>Send Us a Message</h2>
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"
+                       placeholder="Enter your phone number">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject"
+                       placeholder="What is it about?" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="5"
+                          placeholder="Write your message here..."
+                          required></textarea>
+
+                <button type="submit">login ➜</button>
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="https://png.pngtree.com/png-clipart/20241025/original/pngtree-crispy-chicken-burger-png-image_16498068.png"
+                alt="Burger">
+        </div>
+
+        <div class="about-content">
+
+            <p>WHY BURGER HUB?</p>
+
+            <h2>
+                We Don't Just Make
+                <span>Burgers.</span>
+            </h2>
+
+            <p class="about-text">
+                We create delicious experiences. Every burger is
+                prepared with fresh ingredients and our special
+                signature flavors.
+            </p>
+
+            <div class="stats">
+
+                <div>
+                    <strong>10K+</strong>
+                    <small>Customers</small>
+                </div>
+
+                <div>
+                    <strong>25+</strong>
+                    <small>Burgers</small>
+                </div>
+
+                <div>
+                    <strong>4.9⭐</strong>
+                    <small>Rating</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div>
+            <p>HUNGRY ALREADY?</p>
+
+            <h2>
+                Your Dream Burger
+                <span>Is Waiting! 🍔</span>
+            </h2>
+        </div>
+
+        <a href="#menu" class="primary-btn">
+            Order Now →
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-logo">
+            🍔 BurgerHub
+        </div>
+
+        <p>
+            Fresh. Juicy. Delicious.
+        </p>
+
+        <div class="social">
+            Instagram &nbsp; | &nbsp;
+            Facebook &nbsp; | &nbsp;
+            Twitter
+        </div>
+
+        <hr>
+
+        <small>
+            © 2026 Burger Hub. All Rights Reserved.
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
+```v
